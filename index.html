@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda Telefônica</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="cointainer">
+      <header>
+        <img
+          src="./assets/agenda-telefonica.png"
+          alt="Imagem de uma agenda Telefônica"
+        />
+        <h1>Agenda Telefônica</h1>
+      </header>
+      <form id="contacts">
+        <input
+          type="text"
+          id="name"
+          required
+          placeholder="Digite o nome do contato"
+        />
+        <input
+          type="tel"
+          id="number"
+          required
+          placeholder="(xx) xxxxx-xxxx"
+          pattern="[0-9]{10,11}"
+        />
+        <input type="email" id="email" placeholder="E-mail" />
+        <button type="submit">
+          <img src="./assets/add.png" alt="icone sinal mais" />
+          Salvar
+        </button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome do contato</th>
+            <th>Telefone</th>
+            <th>E-mail</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Total de Contatos:</td>
+            <td id="all-contacts"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
