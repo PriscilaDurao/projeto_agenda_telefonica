@@ -39,8 +39,7 @@ form {
     display: flex;
     max-width: 900px;
     justify-content: space-evenly;
-    margin-bottom: 36px;
-    margin: 36px auto 0 auto; /* Centraliza o form na horizontal e mantém o espaçamento inferior */
+    margin: 36px auto; /* Centraliza o form na horizontal e mantém o espaçamento inferior */
 }
 
 form input,
